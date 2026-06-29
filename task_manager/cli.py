@@ -18,7 +18,7 @@ def run():
             priority = input("Enter the priority (High/Medium/low) [default Medium]:").strip()
             if priority == '':
                 priority = "Medium"
-            elif priority not in ["High" , "Medium" , "Low"]:
+            elif priority not in ["High" , "HIGH" , "high" , "Medium" , "MEDIUM" , "medium" , "Low" , "LOW" , "low"]:
                 display.show_message("Invalid priority. Task not added.")
                 continue
 
